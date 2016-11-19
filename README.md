@@ -39,7 +39,13 @@ Make NeoPixels react to Twitter trends
 - Install [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) & [Dependencies](#dependencies) on Raspberry Pi (see [raspbian installation guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) for more details)
 - Set up Twitter Dev account and register for API keys. See [python-twitter docs](https://python-twitter.readthedocs.io/en/latest/) for information about setting up API Keys
 - Configure conf.py with API keys, LED colors, and correct GPIO pins
-- run main.py with super user permissions, i.e. `sudo python $PIXEL_PATH/PiXel/main.py`
+- run main.py with super user permissions, i.e. `sudo python $PIXEL_PATH/PiXel/main.py` OR to run at startup (hack-y)
+```
+## Enable PiXel @ start
+if ! ps ax | grep -v grep | grep python > /dev/null; then
+        screen -d -m -S PiXel bash -c 'cd $PIXEL_PATH/PiXel/ && sudo python main.py'
+fi
+```
 
 # Queries
 PiXel uses 3 query types. For information about formatting, see (Twitter Search API documentation)[https://www.google.com/search?q=twitter+search+API&ie=utf-8&oe=utf-8]. All three queries are included in the `q` field of a Twitter Search call.
