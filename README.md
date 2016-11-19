@@ -2,7 +2,7 @@
 Make NeoPixels react to Twitter trends
 
 # Overview
-- PiXel runs on a (Raspberry Pi)[https://www.raspberrypi.org/], and triggers LED animations based on current [Twitter](https://twitter.com/) trends.
+- PiXel runs on a [Raspberry Pi](https://www.raspberrypi.org), and triggers LED animations based on current [Twitter](https://twitter.com/) trends.
 - For every tweet in the last 5 seconds that matches one of the user supplied keywords, PiXel flashes a random LED on the strip.
 - If nearly the same number of tweets as pixels are found, then a random special animation is triggered
 - If barely any tweets are found, then the pixels glow dimly
@@ -28,7 +28,8 @@ Make NeoPixels react to Twitter trends
 - Install with `$ pip install python-twitter` or follow the link and install manually.
 
 # Setup
-- Follow [Adafruit Guide to Using NeoPixels with Raspberry Pi](https://learn.adafruit.com/neopixels-on-raspberry-pi/wiring) to set up WS281X Strip
+- Follow [Adafruit Guide to Using NeoPixels with Raspberry Pi](https://learn.adafruit.com/neopixels-on-raspberry-pi/wiring) to set up WS281X Strip. Connect to [GPIO18, GND]
+- (Optional): Connect Toggle button to [GPIO24, GND] for Mode Toggle
 - Install [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) & [Dependencies](#dependencies) on Raspberry Pi (see [raspbian installation guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) for more details)
 - Set up Twitter Dev account and register for API keys. See [python-twitter docs](https://python-twitter.readthedocs.io/en/latest/) for information about setting up API Keys
 - Configure conf.py with API keys, LED colors, and correct GPIO pins
