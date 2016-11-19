@@ -1,5 +1,11 @@
-# PiXel
+# PiXel (Pi Pixel)
 Make NeoPixels react to Twitter trends
+
+<img src="https://github.com/ianmclinden/PiXel/blob/master/img/TweetTree.png" width="240">
+
+[Reacting to live tweets](https://github.com/ianmclinden/PiXel/blob/master/img/TweetTree_TwitterMode.mp4)
+
+[Reacting to a special hashtag](https://github.com/ianmclinden/PiXel/blob/master/img/TweetTree_TwinkleWhite.mp4)
 
 # Overview
 - PiXel runs on a [Raspberry Pi](https://www.raspberrypi.org), and triggers LED animations based on current [Twitter](https://twitter.com/) trends.
