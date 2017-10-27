@@ -16,12 +16,16 @@ Make NeoPixels react to Twitter trends
 - A toggle button can be added to cycle the array between the Standby/OFF, Twitter, and Glow states
 
 # Hardware Requirements
-- (Raspberry Pi)[https://www.raspberrypi.org/] (2x/3x) with Latest Raspbian
+- [Raspberry Pi](https://www.raspberrypi.org) (2x/3x) with Latest Raspbian
 - Raspberry Pi Power Supply (2+ Amps)
-- WS281X LED Strip ((NeoPixel)[https://www.adafruit.com/category/168] or clone)
+- WS281X LED Strip ([NeoPixel](https://www.adafruit.com/category/168) or clone)
 - 5v Power Supply - (0.06 * Number of Pixels) Amps
 - Logic Level Conversion (see [Adafruit Guide to Using NeoPixels with Raspberry Pi](https://learn.adafruit.com/neopixels-on-raspberry-pi/wiring) for more details on wiring)
 - (Optional) Toggle button (for controlling modes)
+
+Alternatively, Order and Assemble a [NeoPixel Shield](https://oshpark.com/shared_projects/EfBTUL7t)
+
+<a href="https://oshpark.com/shared_projects/EfBTUL7t"><img src="https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park"></img></a>
 
 # Dependencies
 [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO)
@@ -48,7 +52,7 @@ fi
 ```
 
 # Queries
-PiXel uses 3 query types. For information about formatting, see (Twitter Search API documentation)[https://www.google.com/search?q=twitter+search+API&ie=utf-8&oe=utf-8]. All three queries are included in the `q` field of a Twitter Search call.
+PiXel uses 3 query types. For information about formatting, see [Twitter Search API documentation](https://www.google.com/search?q=twitter+search+API&ie=utf-8&oe=utf-8). All three queries are included in the `q` field of a Twitter Search call.
 - QUERY_KEYWORDS: These keywords trigger a single flash.
 - QUERY_SPECIALS: These keywords trigger a special animation.
 - QUERY_FROM_USERS: If a tweet was written by this user a special animation is triggered.
