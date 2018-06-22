@@ -58,4 +58,6 @@ PiXel uses 3 query types. For information about formatting, see [Twitter Search 
 - QUERY_FROM_USERS: If a tweet was written by this user a special animation is triggered.
 
 # Author
-Ian McLinden, 2016
+Ian McLinden, 2018
+
+- [ ] 
